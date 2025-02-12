@@ -441,6 +441,81 @@
                 </div>
             </div>
         </section>
+
+        <style>
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+                grid-gap: 20px;
+                padding: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .gallery-item {
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            
+            .gallery-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+            }
+            
+            .gallery-item:hover {
+                transform: scale(1.05);
+            }
+            
+            /* Media Queries for Responsiveness */
+            @media (max-width: 768px) { /* Tablet and smaller */
+                .gallery {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+                }
+            }
+            
+            @media (max-width: 480px) { /* Mobile */
+                .gallery {
+                    grid-template-columns: 1fr; /* 1 column */
+                }
+            }
+            </style>
+        <section>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/1.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/2.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/3.jpg" alt="Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/4.jpg" alt="Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/5.jpg" alt="Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/6.jpg" alt="Image 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/7.jpg" alt="Image 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/8.jpg" alt="Image 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery/9.jpg" alt="Image 9">
+                </div>
+            </div>
+        </section>
+        
+
         <!-- Footer Section Start -->
         <footer class="footer-section fix">
             <div class="container">
@@ -526,12 +601,6 @@
                                         <a href="https://wa.me/971503887200?text=Hello! I want to enquire about hexagonal briquettes.">
                                         <i class="fas fa-chevron-right"></i>
                                         Hexagonal
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://wa.me/971503887200?text=Hello! I want to enquire about cylinder briquettes.">
-                                        <i class="fas fa-chevron-right"></i>
-                                        cylinder
                                         </a>
                                     </li>
                                     <li>
